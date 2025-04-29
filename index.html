@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tw-eyes</title>
+
+    <link rel="icon" href="images/logo/web-development.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Lato:wght@300;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="mobile-navigation" id="mobile-navigation">
+      <div class="mobile-navigation-header">
+        <div class="mobile-logo-container">
+          <img src="images/logo/code-review.png" alt="code" class="logo">
+          <img src="images/logo/code-review.png" alt="code" class="logo">
+        </div>
+
+        <div class="close-button" onclick="toggleMobileNavigation();">
+          <button>
+            <i class="fa fa-close"></i>
+          </button>
+        </div>
+      </div>
+      <a href="#" class="mobile-navigation--item mobile-navigation--item__active">Home</a>
+      <a href="#" class="mobile-navigation--item">About</a>
+      <a href="#" class="mobile-navigation--item">Services</a>
+      <a href="#" class="mobile-navigation--item">Contact</a>
+    </div>
+
+    <div id="container">
+      <header>
+        <div class="logo-container">
+          <img src="images/logo/code-review.png" alt="code" class="logo">
+          <img src="images/logo/code-review.png" alt="code" class="logo">
+        </div>
+
+        <nav class="navigation">
+          <a href="#" class="navigation--item navigation--item__active">Home</a>
+          <a href="#" class="navigation--item">About</a>
+          <a href="#" class="navigation--item">Services</a>
+          <a href="#" class="navigation--item">Contact</a>
+        </nav>
+
+        <div class="menu-button">
+          <button onclick="toggleMobileNavigation()">
+            <i class="fa fa-reorder"></i>
+          </button>
+        </div>
+
+        <button class="navigation--button">Get Started</button>
+      </header>
+      <main>
+        <div class="main--content">
+          <h1 class="headline">Code like never before</h1>
+          <p class="description">Le code est un ensemble d'instructions écrites dans un langage de programmation que l'ordinateur peut comprendre et exécuter.</p>
+
+          <button class="play-button">
+            <i class="fa fa-play-circle"></i> Discover Video
+          </button>
+        </div>
+        <div class="main--image">
+          <img src="images/image/pic3.jpg" alt="code" class="main-image">
+        </div>
+      </main>
+
+      <footer>
+        <div class="socials">
+          <a href="" class="socials--item">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="" class="socials--item">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a href="" class="socials--item">
+            <i class="fa fa-youtube"></i>
+          </a>
+        </div>
+
+        <a class="author-name">Amith Anjanappa</a>
+      </footer>
+    </div>
+
+    <script>
+      function toggleMobileNavigation() {
+        var element = document.getElementById("mobile-navigation");
+
+        if(element.classList.contains("mobile-navigation__open")){
+          element.classList.remove("mobile-navigation__open");
+        } else {
+          element.classList.add("mobile-navigation__open");
+        }
+      }
+    </script>
+  </body>
+</html>
